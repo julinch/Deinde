@@ -12,11 +12,20 @@ import ObjectMapper
 
 struct TripVO: Mappable {
     var title: String?
-    var tripData: Date?
+    var tripDate: Date?
     var tripImage: URL?
-    var tripBenefits: [String]
+    var tripBenefits: [String]?
     
+    init?(map: Map) {
+        
+    }
     
+    mutating func mapping(map: Map) {
+        title <- map["title"]
+        tripDate <- map["tripDate"]
+        tripImage <- map["tripImage"]
+        tripBenefits <- map["tripBenefits"]
+    }
     
     
 }

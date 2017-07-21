@@ -18,12 +18,22 @@ struct UserVO: Mappable {
     var facebook: String?
     var avatar: URL?
     var description: String?
-    var userTours: [TripVO]
-
+    var userTours: [TripVO]?
+    
     init?(map: Map) {
         
     }
     
-    
+    mutating func mapping(map: Map) {
+        id <- map["id"]
+        firstName <- map ["firstName"]
+        secondName <- map["secondName"]
+        email <- map["email"]
+        facebook <- map["facebook"]
+        avatar <- map["avatar"]
+        description <- map["description"]
+        userTours <- map["userTours"]
+        
+    }
     
 }

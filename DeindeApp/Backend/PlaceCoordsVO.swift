@@ -13,5 +13,13 @@ struct CoordsVO: Mappable {
     var latitude: Double?
     var longtitude: Double?
     
+    init?(map: Map) {
+        
+    }
     
+    mutating func mapping(map: Map) {
+        latitude <- map["latitude"]
+        longtitude <- map["longtitude"]
+        
+    }
 }

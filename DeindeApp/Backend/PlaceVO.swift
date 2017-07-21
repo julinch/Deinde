@@ -16,5 +16,16 @@ struct PlaceVO: Mappable {
     var coords: CoordsVO?
     var placeImage: URL? // or Image????
     
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        title <- map["title"]
+        time <- map["time"]
+        description <- map["description"]
+        coords <- map ["coords"]
+        placeImage <- map ["placeImage"]
+    }
     
 }
