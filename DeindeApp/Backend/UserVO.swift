@@ -11,7 +11,8 @@ import ObjectMapper
 
 struct UserVO: Mappable {
     
-    var id: Int?
+    var token: String? // what comes from firebaase
+    //var id: Int?
     var firstName: String?
     var secondName: String?
     var email: String?

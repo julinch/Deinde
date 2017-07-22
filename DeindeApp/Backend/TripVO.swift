@@ -11,6 +11,7 @@ import ObjectMapper
 
 
 struct TripVO: Mappable {
+    var tourId: Int?
     var title: String?
     var tripDate: Date?
     var tripImage: URL?

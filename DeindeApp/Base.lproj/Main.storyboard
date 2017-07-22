@@ -166,7 +166,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qGZ-62-kuN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мої тури" id="EwN-NT-0KF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VpJ-ct-ZtI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VpJ-ct-ZtI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -185,7 +185,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AV1-9z-Rwk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Всі тури" id="WPm-4X-WEx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a5y-EV-p3H">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="a5y-EV-p3H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -204,7 +204,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2dA-0W-M2Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Профіль" id="UB5-if-nb6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aET-57-3Wd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aET-57-3Wd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
