@@ -16,6 +16,7 @@ struct TripVO: Mappable {
     var tripDate: Date?
     var tripImage: URL?
     var tripBenefits: [String]?
+    var duration: Int?
     
     init?(map: Map) {
         
@@ -26,6 +27,7 @@ struct TripVO: Mappable {
         tripDate <- map["tripDate"]
         tripImage <- map["tripImage"]
         tripBenefits <- map["tripBenefits"]
+        duration <- map["duration"]
     }
     
     
