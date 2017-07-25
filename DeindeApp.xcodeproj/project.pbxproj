@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		22963F101F23B665002E6A64 /* MyTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F0F1F23B665002E6A64 /* MyTourViewController.swift */; };
+		22963F181F23CD9F002E6A64 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F171F23CD9F002E6A64 /* MapMarker.swift */; };
+		22963F1A1F23CDE5002E6A64 /* TripScheduledEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F191F23CDE5002E6A64 /* TripScheduledEvent.swift */; };
+		22963F1C1F23CF25002E6A64 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F1B1F23CF25002E6A64 /* PlaceDetailsViewController.swift */; };
 		3582B79F1F22AA4900827A98 /* UserVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582B79E1F22AA4900827A98 /* UserVO.swift */; };
 		3582B7A11F22AB9600827A98 /* TripVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582B7A01F22AB9600827A98 /* TripVO.swift */; };
 		3582B7A31F22AC2B00827A98 /* PlaceVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582B7A21F22AC2B00827A98 /* PlaceVO.swift */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		22963F0F1F23B665002E6A64 /* MyTourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTourViewController.swift; sourceTree = "<group>"; };
+		22963F171F23CD9F002E6A64 /* MapMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
+		22963F191F23CDE5002E6A64 /* TripScheduledEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripScheduledEvent.swift; sourceTree = "<group>"; };
+		22963F1B1F23CF25002E6A64 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
 		3582B79E1F22AA4900827A98 /* UserVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVO.swift; sourceTree = "<group>"; };
 		3582B7A01F22AB9600827A98 /* TripVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripVO.swift; sourceTree = "<group>"; };
 		3582B7A21F22AC2B00827A98 /* PlaceVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceVO.swift; sourceTree = "<group>"; };
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22963F161F23CD7C002E6A64 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				22963F171F23CD9F002E6A64 /* MapMarker.swift */,
+				22963F191F23CDE5002E6A64 /* TripScheduledEvent.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		2FB406D5F3255BC366291689 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +102,8 @@
 			children = (
 				359222341F224F4200C64D6C /* ViewController.swift */,
 				22963F0F1F23B665002E6A64 /* MyTourViewController.swift */,
+				22963F1B1F23CF25002E6A64 /* PlaceDetailsViewController.swift */,
+				22963F161F23CD7C002E6A64 /* Map */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -254,9 +271,12 @@
 			files = (
 				22963F101F23B665002E6A64 /* MyTourViewController.swift in Sources */,
 				359222351F224F4200C64D6C /* ViewController.swift in Sources */,
+				22963F181F23CD9F002E6A64 /* MapMarker.swift in Sources */,
 				3582B79F1F22AA4900827A98 /* UserVO.swift in Sources */,
 				359222331F224F4200C64D6C /* AppDelegate.swift in Sources */,
 				3582B7A31F22AC2B00827A98 /* PlaceVO.swift in Sources */,
+				22963F1C1F23CF25002E6A64 /* PlaceDetailsViewController.swift in Sources */,
+				22963F1A1F23CDE5002E6A64 /* TripScheduledEvent.swift in Sources */,
 				3582B7A51F22ADE300827A98 /* PlaceCoordsVO.swift in Sources */,
 				3582B7A11F22AB9600827A98 /* TripVO.swift in Sources */,
 			);
@@ -280,7 +300,7 @@
 				3592223C1F224F4200C64D6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
+			path = DeindeApp;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

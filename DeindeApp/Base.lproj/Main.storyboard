@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="612" y="60"/>
         </scene>
-        <!--View Controller-->
+        <!--My Tour View Controller-->
         <scene sceneID="A9d-be-lZd">
             <objects>
-                <viewController id="6R0-6R-1rF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyTourViewController" id="6R0-6R-1rF" customClass="MyTourViewController" customModule="DeindeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SUy-rf-iAt"/>
                         <viewControllerLayoutGuide type="bottom" id="cI1-U5-tz4"/>
@@ -58,7 +58,7 @@
         <!--My Tour Detail View-->
         <scene sceneID="XPX-XV-IaI">
             <objects>
-                <viewController id="JJb-iT-HUz" userLabel="My Tour Detail View" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyTourDetailView" id="JJb-iT-HUz" userLabel="My Tour Detail View" customClass="PlaceDetailsViewController" customModule="DeindeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gwd-Me-Iwu"/>
                         <viewControllerLayoutGuide type="bottom" id="Moc-wV-Qlo"/>
@@ -66,8 +66,28 @@
                     <view key="view" contentMode="scaleToFill" id="pBF-aq-O0F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN8-Jg-S7E">
+                                <rect key="frame" x="105" y="311" width="165" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWK-5A-hWZ">
+                                <rect key="frame" x="317" y="91" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonClicked:" destination="JJb-iT-HUz" eventType="touchUpInside" id="sV2-hy-IeG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="iN8-Jg-S7E" id="v8j-xN-Bwr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lti-kU-tYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +187,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qGZ-62-kuN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мої тури" id="EwN-NT-0KF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VpJ-ct-ZtI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VpJ-ct-ZtI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -186,7 +206,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AV1-9z-Rwk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Всі тури" id="WPm-4X-WEx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="a5y-EV-p3H">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a5y-EV-p3H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -205,7 +225,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2dA-0W-M2Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Профіль" id="UB5-if-nb6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aET-57-3Wd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aET-57-3Wd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
