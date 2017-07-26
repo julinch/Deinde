@@ -8,16 +8,26 @@
 
 import UIKit
 import GoogleMaps
+import GooglePlaces
+import WARangeSlider
+
+
 
 class MyTourViewController: UIViewController, GMSMapViewDelegate  {
 
-    var mapView: GMSMapView?
+   
     var markerArray = [MapMarker]()
+    
+    @IBOutlet weak var viewWithMap: GMSMapView!
+   
+    @IBOutlet weak var rangeSliderView: RangeSlider!
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sliderController = RangeSliderController(slider: rangeSliderView)
         
         //temp struct fill
         var eventArray = [TripScheduledEvent]()
@@ -32,28 +42,30 @@ class MyTourViewController: UIViewController, GMSMapViewDelegate  {
         tripEvent = TripScheduledEvent(time: "18:00", latitude: 50.388422, longitude: 30.370306)
         eventArray.append(tripEvent)
 
-        GMSServices.provideAPIKey("AIzaSyDUbn8NuBavls6OpGpbE4N0mGqjmD1e2Cw")
+        
         let camera = GMSCameraPosition.camera(withLatitude: eventArray[0].latitude, longitude: eventArray[0].longitude, zoom: 15)
-        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera )
+        self.viewWithMap.camera = camera
         
         for i in eventArray {
-            let marker = MapMarker(position: CLLocationCoordinate2D(latitude: i.latitude, longitude: i.longitude), time: i.time, map: mapView!)
+            let marker = MapMarker(position: CLLocationCoordinate2D(latitude: i.latitude, longitude: i.longitude), time: i.time, map: viewWithMap!)
             markerArray.append(marker)
             
         }
         
         
+      
         
         
-        view = mapView
-        
-        mapView?.delegate = self
+        viewWithMap?.delegate = self
 
         self.navigationController?.isNavigationBarHidden = false
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem
 
+    }
+    func rangeSliderValueChanged() {
+    
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {

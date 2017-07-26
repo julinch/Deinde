@@ -11,6 +11,7 @@
 		22963F181F23CD9F002E6A64 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F171F23CD9F002E6A64 /* MapMarker.swift */; };
 		22963F1A1F23CDE5002E6A64 /* TripScheduledEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F191F23CDE5002E6A64 /* TripScheduledEvent.swift */; };
 		22963F1C1F23CF25002E6A64 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22963F1B1F23CF25002E6A64 /* PlaceDetailsViewController.swift */; };
+		22E613F61F27A2D5000B7D50 /* RangeSliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E613F51F27A2D5000B7D50 /* RangeSliderController.swift */; };
 		3582B79F1F22AA4900827A98 /* UserVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582B79E1F22AA4900827A98 /* UserVO.swift */; };
 		3582B7A11F22AB9600827A98 /* TripVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582B7A01F22AB9600827A98 /* TripVO.swift */; };
 		3582B7A31F22AC2B00827A98 /* PlaceVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582B7A21F22AC2B00827A98 /* PlaceVO.swift */; };
@@ -28,6 +29,7 @@
 		22963F171F23CD9F002E6A64 /* MapMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
 		22963F191F23CDE5002E6A64 /* TripScheduledEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripScheduledEvent.swift; sourceTree = "<group>"; };
 		22963F1B1F23CF25002E6A64 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		22E613F51F27A2D5000B7D50 /* RangeSliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderController.swift; sourceTree = "<group>"; };
 		3582B79E1F22AA4900827A98 /* UserVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVO.swift; sourceTree = "<group>"; };
 		3582B7A01F22AB9600827A98 /* TripVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripVO.swift; sourceTree = "<group>"; };
 		3582B7A21F22AC2B00827A98 /* PlaceVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceVO.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				22963F171F23CD9F002E6A64 /* MapMarker.swift */,
 				22963F191F23CDE5002E6A64 /* TripScheduledEvent.swift */,
+				22E613F51F27A2D5000B7D50 /* RangeSliderController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -259,7 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -276,6 +279,7 @@
 				359222331F224F4200C64D6C /* AppDelegate.swift in Sources */,
 				3582B7A31F22AC2B00827A98 /* PlaceVO.swift in Sources */,
 				22963F1C1F23CF25002E6A64 /* PlaceDetailsViewController.swift in Sources */,
+				22E613F61F27A2D5000B7D50 /* RangeSliderController.swift in Sources */,
 				22963F1A1F23CDE5002E6A64 /* TripScheduledEvent.swift in Sources */,
 				3582B7A51F22ADE300827A98 /* PlaceCoordsVO.swift in Sources */,
 				3582B7A11F22AB9600827A98 /* TripVO.swift in Sources */,
